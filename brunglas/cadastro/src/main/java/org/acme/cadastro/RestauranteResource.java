@@ -1,6 +1,6 @@
 package org.acme.cadastro;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -8,11 +8,11 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Path("/restaurantes")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@Tag(name = "Restaurante")
 public class RestauranteResource {
 
     @GET
@@ -61,6 +61,7 @@ public class RestauranteResource {
 
     @GET
     @Path("{idRestaurante}/pratos")
+    @Tag(name = "Prato")
     public List<Restaurante> buscaTodosPratos(@PathParam("idRestaurante") Long idRestaurante) {
         Optional<Restaurante> restauranteOp = Restaurante.findByIdOptional(idRestaurante);
         if(restauranteOp.isEmpty()) {
@@ -71,6 +72,7 @@ public class RestauranteResource {
 
     @GET
     @Path("{idRestaurante}/pratos/{id}")
+    @Tag(name = "Prato")
     public Prato buscaPrato(@PathParam("id") Long idRestaurante, Long id) {
         Optional<Prato> pratoOp = Prato.findByIdOptional(id);
         pratoOp.ifPresentOrElse(Prato::findById, () -> {throw new NotFoundException();});
@@ -81,6 +83,7 @@ public class RestauranteResource {
     @POST
     @Path("{idRestaurante}/pratos")
     @Transactional
+    @Tag(name = "Prato")
     public Response adicionaPrato(@PathParam("idRestaurante") Long idRestaurante, Prato dto) {
         Optional<Restaurante> restauranteop = Restaurante.findByIdOptional(idRestaurante);
         if(restauranteop.isEmpty()) {
@@ -106,4 +109,39 @@ public class RestauranteResource {
 
         return Response.status(Response.Status.CREATED).build();
     }
+
+    @PUT
+    @Path("{idRestaurante}/prato/{id}")
+    @Transactional
+    @Tag(name = "Prato")
+    public void atualizar(@PathParam("idRestaurante") Long idRestaurante, @PathParam("id") Long id, Prato dto) {
+        Optional<Restaurante> restauranteOp = Restaurante.findByIdOptional(idRestaurante);
+        if(restauranteOp.isEmpty()) {
+            throw new NotFoundException("Restaurante não existe");
+        }
+        Optional<Prato> pratoOp = Prato.findByIdOptional(id);
+        if(pratoOp.isEmpty()) {
+            throw new NotFoundException("Prato não existe");
+        }
+        Prato prato = new Prato();
+        prato.preco = dto.preco;
+        prato.persist();
+    }
+
+    @DELETE
+    @Path("{idRestaurante}/prato/{id}")
+    @Transactional
+    @Tag(name = "Prato")
+    public void deletarPrato(@PathParam("idRestaurante") Long idRestaurante, @PathParam("id") Long id) {
+        Optional<Restaurante> restauranteOp = Restaurante.findByIdOptional(idRestaurante);
+        if(restauranteOp.isEmpty()) {
+            throw new NotFoundException("Restaurante não encontrado");
+        }
+        Optional<Prato> pratoOp = Prato.findByIdOptional(id);
+
+        pratoOp.ifPresentOrElse(Prato::delete, () -> {
+            throw new NotFoundException("Prato não encontrado");
+        });
+    }
+
 }

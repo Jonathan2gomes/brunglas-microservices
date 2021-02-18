@@ -1,0 +1,31 @@
+
+O
+java:S3655"6Call "pratoOp.isPresent()" before accessing the value.(œ™ÆĞÿÿÿÿÿ
+|
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "restaurante".(‹ˆ°Øúÿÿÿÿ
+v
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "prato".(œ™ÆĞÿÿÿÿÿ
+n
+java:S3252"ZUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "listAll".(œÔâ
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(üØ©§
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(üØ©§
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(üØ©§
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(â»‡
+p
+java:S3252"WUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "list".(ş³ëâøÿÿÿÿ
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(òÃ¨ı
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(–í°¦
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(â»‡
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(òÃ¨ı
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(â»‡
+w
+java:S3252"cUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findByIdOptional".(òÃ¨ı
