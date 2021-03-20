@@ -3,6 +3,16 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/changelog.md">
           <value>
             <set />
@@ -23,7 +33,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/empresa/InscricaoMunicipal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/empresa/PessoaJuridica.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/empresa/ResponsavelContabil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/exception/EntidadeNaoEncontradaException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/pessoa/Pessoa.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/domain/pessoa/Telefone.java">
           <value>
             <set />
           </value>
@@ -38,7 +73,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/dto/InscricaoMunicipalDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/dto/PessoaJuridicaDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/dto/ResponsavelContabilDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/dto/SocioDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/resources/ArquivoResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/rest/resources/PessoaJuridicaResource.java">
           <value>
             <set />
           </value>
@@ -49,6 +109,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/service/banco/RefreshBancoAgenciaStagingService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/service/empresa/PessoaFisicaService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/service/empresa/PessoaJuridicaService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/java/br/com/govbr/service/empresa/ResponsavelContabilService.java">
           <value>
             <set />
           </value>
@@ -78,7 +153,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/resources/db/migration/V1.0.99__Drop_CK_Banco_Participa_Compe.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/main/resources/testes.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/AgenciaResourceTest.java">
           <value>
             <set />
           </value>
@@ -88,7 +173,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/BairroResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/BancoResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/EmailResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/MunicipioResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/PessoaJuridicaResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/resources/TelefoneSuporteTecnicoResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/java/br/com/govbr/rest/restclients/IBGERestClientMock.java">
           <value>
             <set />
           </value>
@@ -98,7 +213,122 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/resources/META-INF/resources/json/pessoa-juridica-para-cadastro-simples.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/resources/META-INF/resources/json/pessoa-juridica-redesim-inscricao-municipal.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/resources/META-INF/resources/json/pessoa-juridica-redesim.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/resources/META-INF/resources/json/pj-simples-com-inscricao-municipal.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/basecorp para testar testes/base-corporativa/src/test/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/projeto-esfinge/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/projeto-esfinge/src/test/java/br/com/govbr/rest/resources/ActiveMQTestResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/projeto-esfinge/src/test/java/br/com/govbr/rest/resources/JmsIT.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/projeto-esfinge/src/test/java/br/com/govbr/rest/resources/JmsTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/redesim-backend/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/domain/ClassificacaoInstitucional.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/domain/UnidadeGestora.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/rest/resource/ClassificacaoInstitucionalResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/rest/resource/UnidadeGestoraResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/service/BatchService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/java/br/com/govbr/service/json/JsonBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/resources/db/migration/V1.0.0__Criando_base.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/main/resources/import.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/test/java/br/com/govbr/rest/ClassificacaoInstitucionalResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/test/java/br/com/govbr/rest/PostgreSQLTestResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../GOVBR/ug-ci/src/test/java/br/com/govbr/rest/UnidadeGestoraResourceTest.java">
           <value>
             <set />
           </value>
@@ -148,12 +378,157 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/domain/CadastroTestLifecycleManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/domain/Localizacao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/domain/Prato.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/domain/Restaurante.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/domain/RestauranteResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/CadastroTestLifecycleManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/RestauranteResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/ConstraintViolationImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/ConstraintViolationImplementation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/ConstraintViolationResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/DTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/ValidDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/constraints/ValidDTOValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/dto/DTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/dto/LocalizacaoDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/dto/RestauranteDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/dto/ValidDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/dto/ValidDTOValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/mapper/ConstraintViolationExceptionMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/mapper/RestauranteMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/resources/ActiveMQTestResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/resources/CadastroTestLifecycleManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/rest/resources/RestauranteResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/java/org/acme/cadastro/util/TokenUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cadastro/src/main/resources/application.properties">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/main/util/TokenUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cadastro/src/test/java/org/acme/cadastro/RestauranteResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/test/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/test/resources/datasets/JWTProprietarioClaims.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cadastro/src/test/resources/datasets/restaurantes-cenario-1.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docker-compose.yml">
           <value>
             <set />
           </value>
@@ -168,7 +543,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/OpenAPI 3.0.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/openapi.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/openapi.yml">
           <value>
             <set />
           </value>
@@ -194,6 +584,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../teste/crud-simples-2/src/test/application.properties">
           <value>
             <set />
           </value>

@@ -6,12 +6,14 @@ import java.util.Map;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
+import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.utility.DockerImageName;
 
 public class CadastroTestLifecycleManager implements QuarkusTestResourceLifecycleManager {
 
-    public static final DockerImageName PG_IMAGE = DockerImageName.parse("postgres:12.2");
+    public static final DockerImageName PG_IMAGE = DockerImageName.parse("postgres:13.1");
 
+    @Container
     private PostgreSQLContainer postgres = new PostgreSQLContainer<>(PG_IMAGE);
 
 
@@ -21,9 +23,9 @@ public class CadastroTestLifecycleManager implements QuarkusTestResourceLifecycl
         Map<String, String> propriedades = new HashMap<String, String>();
 
         //Banco de dados
-        propriedades.put("quarkus.datasource.jdbc.url", postgres.getJdbcUrl());
-        propriedades.put("quarkus.datasource.username", postgres.getUsername());
-        propriedades.put("quarkus.datasource.password", postgres.getPassword());
+//        propriedades.put("quarkus.datasource.jdbc.url", postgres.getJdbcUrl());
+//        propriedades.put("quarkus.datasource.username", postgres.getUsername());
+//        propriedades.put("quarkus.datasource.password", postgres.getPassword());
 
         return propriedades;
     }

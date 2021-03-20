@@ -1,4 +1,4 @@
-package org.acme.cadastro;
+package org.acme.cadastro.domain;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 

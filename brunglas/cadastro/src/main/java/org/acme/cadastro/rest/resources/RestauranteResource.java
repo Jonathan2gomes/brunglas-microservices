@@ -1,8 +1,24 @@
-package org.acme.cadastro;
+package org.acme.cadastro.rest.resources;
 
+import org.acme.cadastro.domain.Prato;
+import org.acme.cadastro.domain.Restaurante;
+import org.acme.cadastro.rest.constraints.ConstraintViolationResponse;
+import org.acme.cadastro.rest.dto.RestauranteDTO;
+import org.acme.cadastro.rest.mapper.RestauranteMapper;
+import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.security.OAuthFlow;
+import org.eclipse.microprofile.openapi.annotations.security.OAuthFlows;
+import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
+import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
+import javax.annotation.security.RolesAllowed;
+import javax.inject.Inject;
 import javax.transaction.Transactional;
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -13,7 +29,13 @@ import java.util.Optional;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Tag(name = "Restaurante")
+@RolesAllowed("proprietario")
+@SecurityScheme(securitySchemeName = "brunglas-oauth", type = SecuritySchemeType.OAUTH2, flows = @OAuthFlows(password = @OAuthFlow(tokenUrl = "http://localhost:8180/auth/realms/brunglas/protocol/openid-connect/token")))
+@SecurityRequirement(name = "brunglas-oauth", scopes = {})
 public class RestauranteResource {
+
+    @Inject
+    RestauranteMapper restauranteMapper;
 
     @GET
     public List<Restaurante> buscarTodos() {
@@ -33,10 +55,30 @@ public class RestauranteResource {
 
     @POST
     @Transactional
-    public void adicionar(Restaurante dto) {
-        dto.persist();
+    @APIResponse(responseCode = "201", description = "Caso restaurante seja encontrado com sucesso")
+    @APIResponse(responseCode = "400", content = @Content(schema = @Schema(allOf = ConstraintViolationResponse.class)))
+    public void adicionar(@Valid RestauranteDTO dto) {
+        Restaurante restaurante = restauranteMapper.toRestaurante(dto);
+        restaurante.persist();
         Response.status(Response.Status.CREATED).build();
     }
+
+    /**
+     * para o put funcionar, primeiramente temos que passar o id e fazer um find, pra
+     * descobrir qual é o produto ou prato que desejamos alterar. Utilizamos o findByIdOptional, pois
+     * já previnimos caso não exista aquele id, acredito que isso também evite o famoso nullPointerException.
+     *
+     * Depois de buscar o id do objeto que desejamos alterar, instanciamos um bovo objeto, fazendo com que esse objeto
+     * receba o objeto busacdo pelo id, que no caso será restauranteOP.get();
+     *
+     * Em seguida, atribuimos os atributos permitidos pelo endpoint, por exemplo, o nome:
+     * restaurante.nome = objeto.atributo do parâmetro (restaurante.nome = dto.nome)
+     *
+     * Em seguida, basta persistirmos o objeto (restaurante.persist).
+     *
+     * Vale lembrar que sempre que quisermos fazer algo que não seja buscar dados no banco, devemos utilizar
+     * a anotação @Transactional para dizer ao hibernate que ele tem permissão para fazer alterações no banco.
+     */
 
     @PUT
     @Path("{id}")
